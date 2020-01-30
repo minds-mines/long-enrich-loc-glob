@@ -26,7 +26,7 @@ from enrich import LongEnrichment
 # Assuming longitudinal_data is a list with each subject's longitudinal data at the ith index
 
 enriched_data = []
-for subject in len(subjects):
+for subject in range(n_subjects):
     # Initialize Enricher 
     enricher = LongEnrichment(r=3, p=0.25)
     # Learn subject's patterns
